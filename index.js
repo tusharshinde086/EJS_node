@@ -7,17 +7,17 @@ const port = 8080;
 app.set("view engin ", "ejs ");
 app.set("views",path.join(__dirname , "/views"));
 
-// app.get("/", (req , res )=> {
-//     // res.send("this is root ");
+app.get("/", (req , res )=> {
+    // res.send("this is root ");
 
-//     res.render("home.ejs");
-// });
+    res.render("home.ejs");
+});
 
-app.get("/hello ", (req , res )=> {
+app.get("/hello", (req , res )=> {
     res.send("hello  ! ");
 
 });
-app.get("/ ", (req , res )=> {
+app.get("/rolldice", (req , res )=> {
      
     res.render("rolldice.ejs");
 
