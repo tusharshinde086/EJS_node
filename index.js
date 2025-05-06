@@ -14,8 +14,9 @@ app.get("/", (req, res) => {
 
 // Dynamic route for Instagram-like username
 app.get("/ig/:username", (req, res) => {
+    const followers = ["pravin","ram" ,"parjyot"," prathmesh"];
     let { username } = req.params;
-    res.render("instagram.ejs", { username });
+    res.render("instagram.ejs", { username , followers });
 });
 
 // input :http://localhost:8080/ig/tushar ;
