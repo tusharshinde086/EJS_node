@@ -18,7 +18,7 @@ app.get("/ig/:username", (req, res) => {
     res.render("instagram.ejs", { username });
 });
 
-// output :http://localhost:8080/ig/tushar ;
+// input :http://localhost:8080/ig/tushar ;
 
 // Simple hello route
 app.get("/hello", (req, res) => {
