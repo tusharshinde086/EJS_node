@@ -18,6 +18,7 @@ app.get("/ig/:username", (req, res) => {
     console.log(username);
     res.send(`Instagram profile for user: ${username}`);
 });
+// output :http://localhost:8080/ig/tushar ;
 
 // Simple hello route
 app.get("/hello", (req, res) => {
