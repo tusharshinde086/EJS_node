@@ -15,9 +15,9 @@ app.get("/", (req, res) => {
 // Dynamic route for Instagram-like username
 app.get("/ig/:username", (req, res) => {
     let { username } = req.params;
-    console.log(username);
-    res.send(`Instagram profile for user: ${username}`);
+    res.render("ig.ejs", { username });
 });
+
 // output :http://localhost:8080/ig/tushar ;
 
 // Simple hello route
