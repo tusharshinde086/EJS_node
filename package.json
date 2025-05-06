@@ -1,0 +1,24 @@
+{
+  "name": "ets_node",
+  "version": "1.0.0",
+  "description": "templating   ,  using EJS , views drectory  , inerpolation   , passing data  , instagram ejs , condition statementy   , loop    , insta page with ejs , serving static files  , includes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tusharshinde086/ETS_node.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tusharshinde086/ETS_node/issues"
+  },
+  "homepage": "https://github.com/tusharshinde086/ETS_node#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0"
+  }
+}
