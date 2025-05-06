@@ -19,7 +19,7 @@ app.get("/hello", (req , res )=> {
 });
 app.get("/rolldice", (req , res )=> {
      let dicevalue = Math.floor(Math.random() * 6) + 1 ;
-    res.render("rolldice.ejs", {num : dicevalue });
+    res.render("rolldice.ejs", {dicevalue });
 
 });
 app.listen(port,() => {
