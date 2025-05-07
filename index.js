@@ -23,7 +23,7 @@ app.get("/", (req, res) => {
 app.get("/ig/:username", (req, res) => {
     const instaData = require("./data.json");
     console.log(instaData);
-    res.render("instagram.ejs");
+    res.render("instagram.ejs", { instaData });
 });
 
 
