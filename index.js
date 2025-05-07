@@ -13,11 +13,19 @@ app.get("/", (req, res) => {
 });
 
 // Dynamic route for Instagram-like username
+// app.get("/ig/:username", (req, res) => {
+//     const followers = ["pravin","ram" ,"parjyot"," prathmesh"];
+//     let { username } = req.params;
+//     res.render("instagram.ejs", { username , followers });
+// });
+//-----------------------------------------------------
+
 app.get("/ig/:username", (req, res) => {
-    const followers = ["pravin","ram" ,"parjyot"," prathmesh"];
-    let { username } = req.params;
-    res.render("instagram.ejs", { username , followers });
+    const instaData = require("./data.json");
+    console.log(instaData);
+    res.render("instagram.ejs");
 });
+
 
 // input :http://localhost:8080/ig/tushar ;
 
