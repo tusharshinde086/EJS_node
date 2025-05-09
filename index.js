@@ -4,9 +4,11 @@ const path = require("path");
 const port = 8080;
 
 // Set EJS as the templating engine
+app.use( express.static(path.join(__dirname, "/public/css")));
+app.use( express.static(path.join(__dirname, "/public/js")));
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "/views"));
-app.use( express.static(path.join(__dirname, "public")));
+
 // Root route
 app.get("/", (req, res) => {
     res.render("home.ejs");
