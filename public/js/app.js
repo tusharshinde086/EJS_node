@@ -1,6 +1,8 @@
-const btns = document.querySelectorAll("button");
-for (let btn of btns) {
+console.log("✅ app.js loaded!");
+
+const buttons = document.querySelectorAll("button");
+for (let btn of buttons) {
     btn.addEventListener("click", () => {
-        console.log("button was clicked");
+        alert("Button clicked!");
     });
 }
